@@ -1,10 +1,28 @@
 import React from 'react';
 
+import MenuButton from './MenuButton/MenuButton.component';
+
+import './Navbar.styles.scss';
+
 const Navbar = props => {
   return (
-    <div>
-      <p>This is the Navbar Responsive component</p>
-    </div>
+    <nav className="nav">
+      <div className="nav-container">
+        <div className="logo">
+          <a href="/">{props.logo}</a>
+        </div>
+        <MenuButton />
+        <div className="menu">
+          <ul>
+            <li className="menu-item">link</li>
+            <li className="menu-item">link</li>
+            <li className="menu-item">link</li>
+            <li className="menu-item">link</li>
+            <li className="menu-item">link</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 };
 
