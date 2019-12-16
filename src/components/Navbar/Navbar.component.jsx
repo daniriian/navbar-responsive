@@ -12,8 +12,12 @@ const Navbar = props => {
   };
 
   return (
-    <nav className='nav' onClick={inverseMenu}>
-      <div className={'overlay' + (menuOpen ? ' add_overlay' : '')}></div>
+    <nav className='nav'>
+      <div
+        className={'overlay' + (menuOpen ? ' add_overlay' : '')}
+        onClick={inverseMenu}
+      ></div>
+
       <div className='nav-container'>
         <div className='logo'>
           <a href='/'>{props.logo}</a>
@@ -22,7 +26,7 @@ const Navbar = props => {
         <div className={'menu' + (menuOpen ? ' menu_open' : '')}>
           <ul>
             <li className='menu-item'>
-              <a href='www.yahoo.com'>Link</a>
+              <a href='https://www.yahoo.com'>Link</a>
             </li>
             <li className='menu-item'>
               <a href='www.yahoo.com'>Link</a>

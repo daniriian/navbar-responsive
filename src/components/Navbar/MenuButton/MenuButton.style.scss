@@ -6,6 +6,7 @@
   height: 44px;
   display: inline-block;
   margin-left: auto;
+  z-index: 1000;
 
   @media screen and (min-width: 800px) {
     display: none;
