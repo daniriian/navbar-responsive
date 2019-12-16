@@ -1,25 +1,28 @@
 .hamburger {
-    // border: 1px solid black;
-    border: none;
-    background: transparent;
-    width: 44px;
-    height: 44px;
-    display: inline-block;
-    margin-left: auto;
+  //   border: 1px solid black;
+  border: none;
+  background: transparent;
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  margin-left: auto;
+
+  @media screen and (min-width: 800px) {
+    display: none;
+  }
 }
 
 .bars {
-    height: 70%;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
+  height: 70%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .button-bar {
-    width: 32px;
-    height: 4px;
-    background-color: white;
+  width: 30px;
+  height: 4px;
+  background-color: white;
 }
