@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const NavWrapper = styled.div`
+  height: 56px;
+`;
+
 export const Nav = styled.nav`
   position: fixed;
   top: 0;
@@ -8,6 +12,9 @@ export const Nav = styled.nav`
   height: 56px;
   width: 100%;
   transition: all 0.2s ease-in;
+  &::after {
+    margin-top: 100px;
+  }
 `;
 
 export const Overlay = styled.div`

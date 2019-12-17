@@ -4,6 +4,7 @@ import MenuButton from './MenuButton/MenuButton.component';
 import useDocumentScrollThrottled from '../DocumentScrollThrottle';
 
 import {
+  NavWrapper,
   Nav,
   Overlay,
   NavContainer,
@@ -34,25 +35,27 @@ const Navbar = ({ logo, menuItems }) => {
   });
 
   return (
-    <Nav transparent={transparentNav}>
-      <Overlay active={menuOpen} onClick={menuOpen ? inverseMenu : null} />
+    <NavWrapper>
+      <Nav transparent={transparentNav}>
+        <Overlay active={menuOpen} onClick={menuOpen ? inverseMenu : null} />
 
-      <NavContainer>
-        <Logo>
-          <a href="/">{logo}</a>
-        </Logo>
-        <MenuButton onClick={inverseMenu} />
-        <Menu opened={menuOpen}>
-          <ul>
-            {menuItems.map((item, index) => (
-              <MenuLink key={index}>
-                <a href={item.address}>{item.name}</a>
-              </MenuLink>
-            ))}
-          </ul>
-        </Menu>
-      </NavContainer>
-    </Nav>
+        <NavContainer>
+          <Logo>
+            <a href="/">{logo}</a>
+          </Logo>
+          <MenuButton onClick={inverseMenu} />
+          <Menu opened={menuOpen}>
+            <ul>
+              {menuItems.map((item, index) => (
+                <MenuLink key={index}>
+                  <a href={item.address}>{item.name}</a>
+                </MenuLink>
+              ))}
+            </ul>
+          </Menu>
+        </NavContainer>
+      </Nav>
+    </NavWrapper>
   );
 };
 
