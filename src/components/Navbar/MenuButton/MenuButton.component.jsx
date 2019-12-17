@@ -1,16 +1,16 @@
 import React from 'react';
 
-import './MenuButton.style.scss';
+import { Hamburger, HamburgerBars, Bar } from './Menu.style';
 
 const MenuButton = props => {
   return (
-    <button type='button' className='hamburger' onClick={props.onClick}>
-      <div className='bars'>
-        <div className='button-bar'></div>
-        <div className='button-bar'></div>
-        <div className='button-bar'></div>
-      </div>
-    </button>
+    <Hamburger type="button" onClick={props.onClick}>
+      <HamburgerBars>
+        <Bar />
+        <Bar />
+        <Bar />
+      </HamburgerBars>
+    </Hamburger>
   );
 };
 

@@ -1,5 +1,6 @@
-.hamburger {
-  //   border: 1px solid black;
+import styled from 'styled-components';
+
+export const Hamburger = styled.button`
   border: none;
   background: transparent;
   width: 44px;
@@ -11,19 +12,19 @@
   @media screen and (min-width: 800px) {
     display: none;
   }
-}
+`;
 
-.bars {
+export const HamburgerBars = styled.div`
   height: 70%;
   border: none;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-}
+`;
 
-.button-bar {
+export const Bar = styled.div`
   width: 30px;
   height: 4px;
   background-color: white;
-}
+`;
