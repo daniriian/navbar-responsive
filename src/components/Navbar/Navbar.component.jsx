@@ -3,7 +3,14 @@ import React, { useState } from 'react';
 import MenuButton from './MenuButton/MenuButton.component';
 import useDocumentScrollThrottled from '../DocumentScrollThrottle';
 
-import './Navbar.styles.scss';
+import {
+  Nav,
+  Overlay,
+  NavContainer,
+  Logo,
+  Menu,
+  MenuLink
+} from './Navbar.styles';
 
 const Navbar = ({ logo, menuItems }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,31 +33,26 @@ const Navbar = ({ logo, menuItems }) => {
     }, TIMEOUT_DELAY);
   });
 
-  const transparentNavStyle = transparentNav ? 'transparent' : '';
-
   return (
-    <nav className={'nav ' + transparentNavStyle}>
-      <div
-        className={'overlay' + (menuOpen ? ' add_overlay' : '')}
-        onClick={menuOpen ? inverseMenu : null}
-      ></div>
+    <Nav transparent={transparentNav}>
+      <Overlay active={menuOpen} onClick={menuOpen ? inverseMenu : null} />
 
-      <div className="nav-container">
-        <div className="logo">
+      <NavContainer>
+        <Logo>
           <a href="/">{logo}</a>
-        </div>
+        </Logo>
         <MenuButton onClick={inverseMenu} />
-        <div className={'menu' + (menuOpen ? ' menu_open' : '')}>
+        <Menu opened={menuOpen}>
           <ul>
             {menuItems.map((item, index) => (
-              <li className="menu-item" key={index}>
+              <MenuLink key={index}>
                 <a href={item.address}>{item.name}</a>
-              </li>
+              </MenuLink>
             ))}
           </ul>
-        </div>
-      </div>
-    </nav>
+        </Menu>
+      </NavContainer>
+    </Nav>
   );
 };
 

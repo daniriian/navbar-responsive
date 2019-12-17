@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Hamburger, HamburgerBars, Bar } from './Menu.style';
+import { Hamburger, HamburgerBars, Bar } from './Menu.styles';
 
 const MenuButton = props => {
   return (
