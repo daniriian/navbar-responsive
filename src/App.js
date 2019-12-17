@@ -10,6 +10,48 @@ function App() {
   return (
     <div className="App">
       <Navbar logo="Bellesa" menuItems={menuLinks} />
+      <div>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+        <p>gfdsgfds</p>
+      </div>
     </div>
   );
 }
